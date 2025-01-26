@@ -153,7 +153,7 @@ public class StockService {
 
     private Double fetchPriceFromAPI(String tickerSymbol) {
         try {
-            String apiKey = "C4UD1VOYE6GS2CL6"; // Replace with your actual API key
+            String apiKey = "KAE2P1IIXLUE3R9D"; // Replace with your actual API key
             String apiUrl = "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=" + tickerSymbol + "&apikey=" + apiKey;
 
             RestTemplate restTemplate = new RestTemplate();
