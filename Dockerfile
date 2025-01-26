@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Build the project and skip tests
-RUN mvn clean package -DskipTests
+RUN mvn clean package -DskipTests -X
 
 # Use OpenJDK 17 runtime for running the application
 FROM openjdk:17.0.1-jdk-slim
