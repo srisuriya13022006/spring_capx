@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")  // Allow all endpoints
-                .allowedOrigins("http://localhost:3000")  // Allow only React frontend
+                .allowedOrigins("https://growtrack-six.vercel.app")  // Allow only React frontend
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")  // Allow these HTTP methods
                 .allowedHeaders("*");  // Allow all headers
     }
